@@ -98,8 +98,8 @@ const Works = () => (
                 </Heading>
             </Section>
 
-            {/* <SimpleGrid columns={[1, 1, 2]} gap={6}>
-                <Section delay={0.5}>
+            <SimpleGrid columns={[1, 1, 2]} gap={6}>
+                {/* <Section delay={0.5}>
                     <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
                         Twitter client app for iPhone Safari
                     </WorkGridItem>
@@ -118,8 +118,8 @@ const Works = () => (
                         P2P private file sharing tool with MSN Messenger integration for
                         Windows
                     </WorkGridItem>
-                </Section>
-            </SimpleGrid> */}
+                </Section> */}
+            </SimpleGrid>
         </Container>
     </Layout>
 )
