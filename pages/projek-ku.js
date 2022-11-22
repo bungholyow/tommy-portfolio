@@ -73,8 +73,8 @@ const Works = () => (
                         A website of the elite app development and contracting agency based
                         in Austria
                     </WorkGridItem>
-                </Section> */}
-                `  {/* <Section delay={0.3}>
+                </Section> 
+                <Section delay={0.3}>
                     <WorkGridItem
                         id="modetokyo"
                         thumbnail={thumbModeTokyo}
@@ -82,8 +82,8 @@ const Works = () => (
                     >
                         The mode magazine for understanding to personally enjoy Japan
                     </WorkGridItem>
-                </Section>` */}
-                {/* <Section delay={0.3}>
+                </Section>` 
+                 <Section delay={0.3}>
                     <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
                         A VR Creative tools for fashion brands
                     </WorkGridItem>
