@@ -20,7 +20,7 @@ import { GridItem } from '../components/grid-item'
 import { IoLogoWhatsapp, IoLogoGithub, IoLogoLinkedin, IoMailOutline } from 'react-icons/io5'
 
 import thumbNada from '../public/images/projek-ku/nada1.png'
-import thumbFitnes from '../public/images/projek-ku/fitnes1.png'
+// import thumbFitnes from '../public/images/projek-ku/fitnes1.png'
 import thumbFoto from '../public/images/projek-ku/bagi1.png'
 import Image from 'next/image'
 
