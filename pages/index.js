@@ -174,13 +174,13 @@ const Home = () => (
           </ListItem>
 
           <ListItem>
-            <Link href="https://www.linkedin.com/in/tommy-dedy-aritonang-493b66250/" target="_blank">
+            <Link href="www.linkedin.com/in/tommy-aritonang" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="purple"
                 leftIcon={<IoLogoLinkedin />}
               >
-                @tommy dedy aritonang
+                @tommy aritonang
               </Button>
             </Link>
           </ListItem>
