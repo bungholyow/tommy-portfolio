@@ -23,9 +23,7 @@ const Work = () => (
       <P>
         Menkiki suggests ramen(Chinese noodle) shops based on a photo of ramen
         you want to eat. Why? Because you don&apos;t need to input Japanese
-        keywords to find restaurants, but just specify a ramen photo then it
-        will suggest great shops for you. It supports 900+ famous ramen shops in
-        Japan!
+
       </P>
       <P>
         So, you can check a shop info as soon as you found a promising ramen
