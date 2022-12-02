@@ -6,6 +6,8 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbFitnes from '../public/images/projek-ku/fitnes1.png'
 import thumbNada from '../public/images/projek-ku/nada1.png'
+import thumbFoto from '../public/images/projek-ku/bagi1.png'
+// import thumbMenkiki from '../public/images/projek-ku/menkiki_eyecatch.png'
 
 const Works = () => (
     <Layout title="Projek">
@@ -38,6 +40,16 @@ const Works = () => (
                     >
                         Web app mengenai info manfaat dan jenis jenis latihan
                         yang biasa  dilakukan di gym
+                    </WorkGridItem>
+                </Section>
+
+                <Section>
+                    <WorkGridItem
+                        id="shareit"
+                        title="Shareit"
+                        thumbnail={thumbFoto}
+                    >
+                        React Web app buat share foto favorit personal atau yang ada di internet
                     </WorkGridItem>
                 </Section>
 

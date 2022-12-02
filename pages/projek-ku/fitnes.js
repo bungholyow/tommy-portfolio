@@ -32,7 +32,7 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://fitnes-app.netlify.app/">
+          <Link href="https://fitnes-app.netlify.app/" target="_blank">
             Fitness App <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>

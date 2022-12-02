@@ -21,6 +21,7 @@ import { IoLogoWhatsapp, IoLogoGithub, IoLogoLinkedin, IoMailOutline } from 'rea
 
 import thumbNada from '../public/images/projek-ku/nada1.png'
 import thumbFitnes from '../public/images/projek-ku/fitnes1.png'
+import thumbFoto from '../public/images/projek-ku/bagi1.png'
 import Image from 'next/image'
 
 
@@ -174,7 +175,7 @@ const Home = () => (
           </ListItem>
 
           <ListItem>
-            <Link href="www.linkedin.com/in/tommy-aritonang" target="_blank">
+            <Link href="https://www.linkedin.com/in/tommy-aritonang/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="purple"
@@ -190,11 +191,11 @@ const Home = () => (
         <SimpleGrid columns={[1, 2, 2]} gap={6} mt={5}>
 
           <GridItem
-            href="https://fitnes-app.netlify.app/"
-            title="Fitnes"
-            thumbnail={thumbFitnes}
+            href="https://bagifoto.netlify.app/"
+            title="Shareit"
+            thumbnail={thumbFoto}
           >
-            Web App info jenis latihan di gym
+            Web App share foto favorit
           </GridItem>
           <GridItem
             href="https://nada-app.netlify.app/"
@@ -208,7 +209,7 @@ const Home = () => (
         <Box align="center" my={4}>
           <NextLink href="/projek-ku" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
-              Projek Saya
+              Projek Lain
             </Button>
           </NextLink>
         </Box>
