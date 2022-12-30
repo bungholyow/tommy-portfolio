@@ -60,12 +60,15 @@ const Work = () => (
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/modetokyo_eyecatch.png" alt="mode.tokyo" />
+      <WorkImage
+        src="/images/projek-ku/modetokyo_eyecatch.png"
+        alt="mode.tokyo"
+      />
       <SimpleGrid columns={2} gap={2}>
-        <WorkImage src="/images/works/modetokyo_01.png" alt="mode.tokyo" />
-        <WorkImage src="/images/works/modetokyo_02.png" alt="mode.tokyo" />
+        <WorkImage src="/images/projek-ku/modetokyo_01.png" alt="mode.tokyo" />
+        <WorkImage src="/images/projek-ku/modetokyo_02.png" alt="mode.tokyo" />
       </SimpleGrid>
-      <WorkImage src="/images/works/modetokyo_03.jpg" alt="mode.tokyo" />
+      <WorkImage src="/images/projek-ku/modetokyo_03.jpg" alt="mode.tokyo" />
     </Container>
   </Layout>
 )

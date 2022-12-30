@@ -17,14 +17,20 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoWhatsapp, IoLogoGithub, IoLogoLinkedin, IoMailOutline } from 'react-icons/io5'
+import {
+  IoLogoWhatsapp,
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoMailOutline
+} from 'react-icons/io5'
 
-import thumbNada from '../public/images/projek-ku/nada1.png'
+// import thumbNada from '../public/images/projek-ku/nada1.png'
+import thumbVlix from '../public/images/projek-ku/netvlix.png'
+import thumbModeKrypto from '../public/images/projek-ku/krypto4.png'
+
 // import thumbFitnes from '../public/images/projek-ku/fitnes1.png'
 import thumbFoto from '../public/images/projek-ku/bagi1.png'
 import Image from 'next/image'
-
-
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -83,24 +89,28 @@ const Home = () => (
           Tentang
         </Heading>
         <Paragraph>
-          Tommy adalah seorang junior web developer yang berdomisili di semarang,
-          sebagai web developer memiliki passion dan keinginan bereksperimen
-          dengan teknologi terbaru dalam pengembangan web. Ketika sedang tidak ngoding,
-          senang melakukan aktifitas yang berhubungan dengan olahraga, dan mendengar musik.
+          Tommy adalah seorang junior web developer yang berdomisili di
+          semarang, sebagai web developer memiliki passion dan keinginan
+          bereksperimen dengan teknologi terbaru dalam pengembangan web. Ketika
+          sedang tidak ngoding, senang melakukan aktifitas yang berhubungan
+          dengan olahraga, dan mendengar musik.
         </Paragraph>
         <Box align="center" my={3}>
-
-
-          <Link href='https://drive.google.com/file/d/11pLd2BotgT7e9QVUQjyKNgBoFZXyWcv1/preview' width="640" height="480" allow="autoplay" target="_blank" passHref scroll={false}>
+          <Link
+            href="https://drive.google.com/file/d/11pLd2BotgT7e9QVUQjyKNgBoFZXyWcv1/preview"
+            width="640"
+            height="480"
+            allow="autoplay"
+            target="_blank"
+            passHref
+            scroll={false}
+          >
             {/* <iframe src="https://drive.google.com/file/d/11pLd2BotgT7e9QVUQjyKNgBoFZXyWcv1/preview" width="640" height="480" allow="autoplay"></iframe> */}
-
 
             <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
               Lihat CV
             </Button>
-
           </Link>
-
         </Box>
       </Section>
 
@@ -130,9 +140,7 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Tommy ♥
         </Heading>
-        <Paragraph>
-          Sepakbola, Futsal, Musik, Film, ngoding dan ngopi
-        </Paragraph>
+        <Paragraph>Sepakbola, Futsal, Musik, Film, ngoding dan ngopi</Paragraph>
       </Section>
 
       <Section delay={0.3}>
@@ -152,7 +160,7 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="#" >
+            <Link href="#">
               <Button
                 variant="ghost"
                 colorScheme="purple"
@@ -175,7 +183,10 @@ const Home = () => (
           </ListItem>
 
           <ListItem>
-            <Link href="https://www.linkedin.com/in/tommy-aritonang/" target="_blank">
+            <Link
+              href="https://www.linkedin.com/in/tommy-aritonang/"
+              target="_blank"
+            >
               <Button
                 variant="ghost"
                 colorScheme="purple"
@@ -185,28 +196,33 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
-
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6} mt={5}>
-
+        <SimpleGrid columns={[1, 2, 3]} gap={6} mt={8}>
           <GridItem
             href="https://bagifoto.netlify.app/"
-            title="Shareit"
+            title="shareit"
             thumbnail={thumbFoto}
           >
-            Web App share foto favorit
+            web App share foto favorit
           </GridItem>
           <GridItem
-            href="https://nada-app.netlify.app/"
-            title="Nada"
-            thumbnail={thumbNada}
+            href="https://netvlix.vercel.app/"
+            title="netflix clone"
+            thumbnail={thumbVlix}
           >
-            Wep App Pemutar Lagu Populer
+            website clone netflix
+          </GridItem>
+          <GridItem
+            href="https://kryptho.netlify.app/"
+            title="krypto"
+            thumbnail={thumbModeKrypto}
+          >
+            info crypto terpopuler saat ini
           </GridItem>
         </SimpleGrid>
 
-        <Box align="center" my={4}>
+        <Box align="center" my={6}>
           <NextLink href="/projek-ku" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
               Projek Lain
@@ -220,4 +236,3 @@ const Home = () => (
 
 export default Home
 export { getServerSideProps } from '../components/chakra'
-

@@ -3,137 +3,99 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-
 import thumbFitnes from '../public/images/projek-ku/fitnes1.png'
 import thumbNada from '../public/images/projek-ku/nada1.png'
 import thumbFoto from '../public/images/projek-ku/bagi1.png'
 // import thumbMenkiki from '../public/images/projek-ku/menkiki_eyecatch.png'
+// import thumbModeTokyo from '../public/images/projek-ku/modetokyo_eyecatch.png'
+import thumbModeKrypto from '../public/images/projek-ku/krypto4.png'
 
 const Works = () => (
-    <Layout title="Projek">
-        <Container>
-            <Heading as="h3" fontSize={20} mb={4}>
-                Projek React
-            </Heading>
+  <Layout title="Projek">
+    <Container>
+      <Heading as="h3" fontSize={20} mb={4} color="cyan">
+        Projek React
+      </Heading>
 
-            <SimpleGrid columns={[1, 1, 2]} gap={6}>
-                <Section>
-                    <WorkGridItem id="nada" title="nada" thumbnail={thumbNada}>
-                        Web app seperti spotify dengan fitur pemutar lagu dan pencarian lagu atau
-                        artis populer sekarang
-                    </WorkGridItem>
-                </Section>
+      <SimpleGrid columns={[1, 1, 3]} gap={4}>
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="nada"
+            title="nada"
+            thumbnail={thumbNada}
+          ></WorkGridItem>
+        </Section>
 
-                {/* <Section>
-                    <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-                        A Markdown note-taking app with 100+ plugins, cross-platform and
-                        encrypted data sync support
-                    </WorkGridItem>
-                </Section> */}
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="fitnes"
+            title="pitnes"
+            thumbnail={thumbFitnes}
+          ></WorkGridItem>
+        </Section>
 
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="shareit"
+            title="shareit"
+            thumbnail={thumbFoto}
+          ></WorkGridItem>
+        </Section>
 
-                <Section>
-                    <WorkGridItem
-                        id="fitnes"
-                        title="Fitnes"
-                        thumbnail={thumbFitnes}
-                    >
-                        Web app mengenai info manfaat dan jenis jenis latihan
-                        yang biasa  dilakukan di gym
-                    </WorkGridItem>
-                </Section>
+        {/* <Section delay={0.1}>
+          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
+            An app that suggests ramen(noodle) shops based on a given photo of
+            the ramen you want to eat
+          </WorkGridItem>
+        </Section> */}
 
-                <Section>
-                    <WorkGridItem
-                        id="shareit"
-                        title="Shareit"
-                        thumbnail={thumbFoto}
-                    >
-                        React Web app buat share foto favorit personal atau yang ada di internet
-                    </WorkGridItem>
-                </Section>
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="krypto"
+            thumbnail={thumbModeKrypto}
+            title="krypto"
+          ></WorkGridItem>
+        </Section>
+      </SimpleGrid>
 
-                {/* <Section delay={0.1}>
-                    <WorkGridItem
-                        id="fourpainters"
-                        title="The four painters"
-                        thumbnail={thumbFourPainters}
-                    >
-                        A video work generated with deep learning, imitating famous four
-                        painters like Van Gogh
-                    </WorkGridItem>
-                </Section> */}
-                {/* <Section delay={0.1}>
-                    <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-                        An app that suggests ramen(noodle) shops based on a given photo of
-                        the ramen you want to eat
-                    </WorkGridItem>
-                </Section> */}
-            </SimpleGrid>
+      <Section delay={0.2}>
+        <Divider my={6} />
 
-            <Section delay={0.2}>
-                <Divider my={6} />
+        <Heading as="h3" fontSize={20} mb={4} color="orange">
+          Projek Laravel
+        </Heading>
+      </Section>
 
-                <Heading as="h3" fontSize={20} mb={4}>
-                    Projek Laravel
-                </Heading>
-            </Section>
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        {/* <Section delay={0.3}>
+          <WorkGridItem
+            id="modetokyo"
+            thumbnail={thumbModeTokyo}
+            title="mode.tokyo"
+          >
+            The mode magazine for understanding to personally enjoy Japan
+          </WorkGridItem>
+        </Section> */}
+      </SimpleGrid>
 
-            <SimpleGrid columns={[1, 1, 2]} gap={6}>
-                {/* <Section delay={0.3}>
-                    <WorkGridItem id="margelo" thumbnail={thumbMargelo} title="Margelo">
-                        A website of the elite app development and contracting agency based
-                        in Austria
-                    </WorkGridItem>
-                </Section> 
-                <Section delay={0.3}>
-                    <WorkGridItem
-                        id="modetokyo"
-                        thumbnail={thumbModeTokyo}
-                        title="mode.tokyo"
-                    >
-                        The mode magazine for understanding to personally enjoy Japan
-                    </WorkGridItem>
-                </Section>` 
-                 <Section delay={0.3}>
-                    <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
-                        A VR Creative tools for fashion brands
-                    </WorkGridItem>
-                </Section> */}
-            </SimpleGrid>
+      <Section delay={0.4}>
+        <Divider my={6} />
 
-            <Section delay={0.4}>
-                <Divider my={6} />
+        <Heading as="h3" fontSize={20} mb={4} color="pink">
+          Projek Lainnya
+        </Heading>
+      </Section>
 
-                <Heading as="h3" fontSize={20} mb={4}>
-                    Projek Lainnya
-                </Heading>
-            </Section>
-
-            <SimpleGrid columns={[1, 1, 2]} gap={6}>
-                {/* <Section delay={0.5}>
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        {/* <Section delay={0.5}>
                     <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
                         Twitter client app for iPhone Safari
                     </WorkGridItem>
                 </Section>
-                <Section delay={0.5}>
-                    <WorkGridItem
-                        id="freedbtagger"
-                        thumbnail={thumbFreeDBTagger}
-                        title="freeDBTagger"
-                    >
-                        Automatic audio file tagging tool using FreeDB for Windows
-                    </WorkGridItem>
-                </Section>
-                <Section delay={0.6}>
-                    <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
-                        P2P private file sharing tool with MSN Messenger integration for
-                        Windows
-                    </WorkGridItem>
-                </Section> */}
-            </SimpleGrid>
-        </Container>
-    </Layout>
+                */}
+      </SimpleGrid>
+    </Container>
+  </Layout>
 )
 
 export default Works
