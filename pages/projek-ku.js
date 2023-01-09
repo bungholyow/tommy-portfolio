@@ -9,6 +9,7 @@ import thumbFoto from '../public/images/projek-ku/bagi1.png'
 // import thumbMenkiki from '../public/images/projek-ku/menkiki_eyecatch.png'
 // import thumbModeTokyo from '../public/images/projek-ku/modetokyo_eyecatch.png'
 import thumbModeKrypto from '../public/images/projek-ku/krypto4.png'
+import thumbCuaca from '../public/images/projek-ku/cuaca3.png'
 
 const Works = () => (
   <Layout title="Projek">
@@ -54,6 +55,14 @@ const Works = () => (
             id="krypto"
             thumbnail={thumbModeKrypto}
             title="krypto"
+          ></WorkGridItem>
+        </Section>
+
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="cuaca"
+            thumbnail={thumbCuaca}
+            title="cuaca"
           ></WorkGridItem>
         </Section>
       </SimpleGrid>
