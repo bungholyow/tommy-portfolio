@@ -45,7 +45,7 @@ const Home = () => (
         p={3}
         textAlign="center"
         bg={useColorModeValue('purple.400', 'purple.600')}
-        css={{ backdropFilter: 'blur(10px)' }}
+        css={{ backdropFilter: 'blur(15px)' }}
       >
         Hai, Saya seorang web developer dari Indonesia!
       </Box>
@@ -77,8 +77,8 @@ const Home = () => (
               src="/images/tommy_2.jpg"
               alt="Gambar profil"
               borderRadius="full"
-              width="100%"
-              height="100%"
+              width="120%"
+              height="120%"
             />
           </Box>
         </Box>
@@ -86,18 +86,35 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Tentang
+          Profil
         </Heading>
         <Paragraph>
-          Tommy adalah seorang junior web developer yang berdomisili di
-          semarang, sebagai web developer memiliki passion dan keinginan
-          bereksperimen dengan teknologi terbaru dalam pengembangan web. Ketika
-          sedang tidak ngoding, senang melakukan aktifitas yang berhubungan
-          dengan olahraga, dan mendengar musik.
+          Saya seorang junior <i>web developer</i> yang antusias terhadap{' '}
+          <i>web development</i> dan keinginan besar belajar teknologi baru,
+          sebagai <i>web developer</i> memiliki pemahaman dalam HTML, CSS,
+          JavaScript, SQL dan familiar dengan <i>MERN stack</i>. Saat sedang
+          tidak ngoding, senang melakukan aktifitas yang berhubungan dengan
+          olahraga, dan mendengar musik.
         </Paragraph>
+
+        {/* <Paragraph>
+          I am a computer engineering graduate with a strong passion for web
+          development and a desire to learn new technologies. He has a solid
+          foundation in HTML, CSS, JavaScript and familiar with popular
+          front-end frameworks such as Vue.js and Nuxt.js, and back-end
+          technologies such as Node.js, Express.js and MongoDB. He has
+          experience working on various projects and understands the importance
+          of clean code and documentation. Michael is a creative problem-solver
+          and has a keen eye for detail and user experience. He is a team player
+          and can work well under pressure, always eager to take on new
+          challenges and improve his skills. He is ready to apply his knowledge
+          and skills to real-world projects and make an impact in the web
+          development industry.
+        </Paragraph> */}
+
         <Box align="center" my={3}>
           <Link
-            href="https://drive.google.com/file/d/11pLd2BotgT7e9QVUQjyKNgBoFZXyWcv1/preview"
+            href="https://bungholyow.github.io/mein-cv/"
             width="640"
             height="480"
             allow="autoplay"
@@ -105,8 +122,6 @@ const Home = () => (
             passHref
             scroll={false}
           >
-            {/* <iframe src="https://drive.google.com/file/d/11pLd2BotgT7e9QVUQjyKNgBoFZXyWcv1/preview" width="640" height="480" allow="autoplay"></iframe> */}
-
             <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
               Lihat CV
             </Button>
@@ -116,7 +131,7 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          Biodata
         </Heading>
         <BioSection>
           <BioYear>1996</BioYear>
@@ -140,7 +155,10 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Tommy ♥
         </Heading>
-        <Paragraph>Sepakbola, Futsal, Musik, Film, ngoding dan ngopi</Paragraph>
+        <Paragraph>
+          Sepakbola, Futsal, Musik, Film, AI, Data, Ngoding dan Ngopi dan Semua
+          hal yang berhubungan dengan teknologi.
+        </Paragraph>
       </Section>
 
       <Section delay={0.3}>

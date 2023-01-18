@@ -10,6 +10,7 @@ import thumbFoto from '../public/images/projek-ku/bagi1.png'
 // import thumbModeTokyo from '../public/images/projek-ku/modetokyo_eyecatch.png'
 import thumbModeKrypto from '../public/images/projek-ku/krypto4.png'
 import thumbCuaca from '../public/images/projek-ku/cuaca3.png'
+import thumbNotes from '../public/images/projek-ku/notes.png'
 
 const Works = () => (
   <Layout title="Projek">
@@ -66,14 +67,34 @@ const Works = () => (
           ></WorkGridItem>
         </Section>
       </SimpleGrid>
+    </Container>
 
-      <Section delay={0.2}>
-        <Divider my={6} />
+    <Container>
+      <Divider my={6} />
+      <Heading as="h3" fontSize={20} mb={4} color="green">
+        Projek NodeJs
+      </Heading>
+      <SimpleGrid columns={[1, 1, 3]} gap={4}>
+        <Section delay={0.2}>
+          <WorkGridItem
+            id="note"
+            title="note"
+            thumbnail={thumbNotes}
+          ></WorkGridItem>
+        </Section>
+      </SimpleGrid>
+    </Container>
 
-        <Heading as="h3" fontSize={20} mb={4} color="orange">
-          Projek Laravel
-        </Heading>
-      </Section>
+    <Container>
+      <SimpleGrid>
+        <Section delay={0.3}>
+          <Divider my={6} />
+
+          <Heading as="h3" fontSize={20} mb={4} color="orange">
+            Projek Laravel
+          </Heading>
+        </Section>
+      </SimpleGrid>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         {/* <Section delay={0.3}>
@@ -86,7 +107,9 @@ const Works = () => (
           </WorkGridItem>
         </Section> */}
       </SimpleGrid>
+    </Container>
 
+    <Container>
       <Section delay={0.4}>
         <Divider my={6} />
 
