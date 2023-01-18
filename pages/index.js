@@ -24,11 +24,9 @@ import {
   IoMailOutline
 } from 'react-icons/io5'
 
-// import thumbNada from '../public/images/projek-ku/nada1.png'
 import thumbVlix from '../public/images/projek-ku/netvlix.png'
 import thumbModeKrypto from '../public/images/projek-ku/krypto4.png'
 
-// import thumbFitnes from '../public/images/projek-ku/fitnes1.png'
 import thumbFoto from '../public/images/projek-ku/bagi1.png'
 import Image from 'next/image'
 
@@ -97,24 +95,9 @@ const Home = () => (
           olahraga, dan mendengar musik.
         </Paragraph>
 
-        {/* <Paragraph>
-          I am a computer engineering graduate with a strong passion for web
-          development and a desire to learn new technologies. He has a solid
-          foundation in HTML, CSS, JavaScript and familiar with popular
-          front-end frameworks such as Vue.js and Nuxt.js, and back-end
-          technologies such as Node.js, Express.js and MongoDB. He has
-          experience working on various projects and understands the importance
-          of clean code and documentation. Michael is a creative problem-solver
-          and has a keen eye for detail and user experience. He is a team player
-          and can work well under pressure, always eager to take on new
-          challenges and improve his skills. He is ready to apply his knowledge
-          and skills to real-world projects and make an impact in the web
-          development industry.
-        </Paragraph> */}
-
         <Box align="center" my={3}>
           <Link
-            href="https://bungholyow.github.io/mein-cv/"
+            href="https://bungholyow.github.io/my-cv/"
             width="640"
             height="480"
             allow="autoplay"
@@ -143,21 +126,21 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2021</BioYear>
-          Lulus S-1 Teknik Komputer dari Universitas Diponegoro (UNDIP) Semarang
+          Lulus S-1 Teknik Komputer dari Universitas Diponegoro Semarang
         </BioSection>
         <BioSection>
-          <BioYear>2021-</BioYear>
+          <BioYear>2022</BioYear>
           Bekerja sebagai freelancer
         </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          Tommy ♥
+          Minat 🤍
         </Heading>
         <Paragraph>
-          Sepakbola, Futsal, Musik, Film, AI, Data, Ngoding dan Ngopi dan Semua
-          hal yang berhubungan dengan teknologi.
+          Sepakbola⚽, Musik🎶, Film📺, Buku📖, Internet🌐, Coding👨‍💻, Kopi☕ dan
+          Semua hal yang berhubungan dengan teknologi.
         </Paragraph>
       </Section>
 
